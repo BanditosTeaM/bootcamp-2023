@@ -1,0 +1,4 @@
+{
+	"*.{tsx,ts,js,jsx}": ["pnpm run format:check", "pnpm run lint:check"],
+	"*.css": ["pnpm run format:check"]
+}
