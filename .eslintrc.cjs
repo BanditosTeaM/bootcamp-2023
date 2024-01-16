@@ -10,7 +10,7 @@ module.exports = {
 	],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parser: '@typescript-eslint/parser',
-	plugins: ['react-refresh', 'prefer-arrow', 'i18next'],
+	plugins: ['react-refresh', 'prefer-arrow'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
 		'prettier/prettier': 'warn',
