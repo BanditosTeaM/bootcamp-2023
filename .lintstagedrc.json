@@ -1,4 +1,4 @@
 {
-	"*.{tsx,ts,js,jsx}": ["pnpm run format", "pnpm run lint"],
-	"*.css": ["pnpm run format"]
+	"*.{tsx,ts,js,jsx}": ["pnpm run format:check", "pnpm run lint:check"],
+	"*.css": ["pnpm run format:check"]
 }
