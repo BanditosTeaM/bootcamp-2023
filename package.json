@@ -7,15 +7,22 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint": "eslint --ext .js,.tsx,.jsx,.ts --ignore-path .gitignore --fix src",
-		"format:all": "prettier --write .",
+		"format": "prettier --write .",
 		"preview": "vite preview",
 		"prepare": "husky install"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	},
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^18.4.4",
+		"@commitlint/config-conventional": "^18.4.4",
 		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
 		"@types/react": "^18.2.43",
 		"@types/react-dom": "^18.2.17",
@@ -29,7 +36,7 @@
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.5",
-		"husky": "^8.0.0",
+		"husky": "^8.0.3",
 		"lint-staged": "^15.2.0",
 		"prettier": "^3.2.2",
 		"typescript": "^5.3.3",
