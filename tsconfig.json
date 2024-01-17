@@ -18,30 +18,31 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
-	},
-	"include": ["src"],
-	"references": [{ "path": "./tsconfig.node.json" }],
-	"paths": {
-		"@/*": ["./src/*"],
-		"@api/*": ["./src/api/*"],
-		"@assets/*": ["./src/assets/*"],
-		"@components/*": ["./src/components/*"],
-		"@constants/*": ["./src/constants/*"],
-		"@pages/*": ["./src/pages/*"],
-		"@providers/*": ["./src/providers/*"],
-		"@store/*": ["./src/store/*"],
-		"@temp/*": ["./src/temp/*"],
-		"@utils/*": ["./src/utils/*"],
+		"noFallthroughCasesInSwitch": true,
 
-		"@api": ["./src/api"],
-		"@assets": ["./src/assets"],
-		"@components": ["./src/components"],
-		"@constants": ["./src/constants"],
-		"@pages": ["./src/pages"],
-		"@providers": ["./src/providers"],
-		"@store": ["./src/store"],
-		"@temp": ["./src/temp"],
-		"@utils": ["./src/utils"]
-	}
+		"paths": {
+			"@/*": ["./src/*"],
+			"@api/*": ["./src/api/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@components/*": ["./src/components/*"],
+			"@constants/*": ["./src/constants/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@providers/*": ["./src/providers/*"],
+			"@store/*": ["./src/store/*"],
+			"@temp/*": ["./src/temp/*"],
+			"@utils/*": ["./src/utils/*"],
+
+			"@api": ["./src/api"],
+			"@assets": ["./src/assets"],
+			"@components": ["./src/components"],
+			"@constants": ["./src/constants"],
+			"@pages": ["./src/pages"],
+			"@providers": ["./src/providers"],
+			"@store": ["./src/store"],
+			"@temp": ["./src/temp"],
+			"@utils": ["./src/utils"]
+		}
+	},
+	"include": ["src", "custom.d.ts"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }
